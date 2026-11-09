@@ -38,5 +38,20 @@ Python, Pandas, NumPy, Matplotlib, Scikit-learn, Joblib, Jupyter Notebook
 * Hyperparameter tuning improved churn recall from 63.10% to 72.73%.
 * The tuned model correctly identified 272 of 374 churned customers in the test set.
 
+## Visualizations
+
+### Customer Churn Distribution
+![Customer Churn Distribution](images/churn_distribution.png)
+
+### Tuned Random Forest Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Top 10 Feature Importances
+![Feature Importances](images/feature_importance.png)
+
+## Evaluation Limitations
+The test dataset was used during exploratory model comparisons and classification threshold analysis. Therefore, the reported test metrics should be considered exploratory estimates rather than results from a completely independent final evaluation.
+For a more rigorous evaluation, model selection, hyperparameter tuning, and threshold optimization should be performed using only training and validation data. The final selected model should then be evaluated once on an untouched test dataset.
+
 ## Conclusion
 The tuned Random Forest model demonstrated useful performance in identifying customers at risk of churn. Future improvements could include validation-based threshold optimization, additional feature engineering, and model explainability techniques.
